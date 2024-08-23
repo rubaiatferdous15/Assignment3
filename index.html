@@ -10,6 +10,7 @@
     
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://kit.fontawesome.com/56a5fa3cc8.js" crossorigin="anonymous"></script>
     <style>
         .font-manrope{
             font-family: "Manrope", sans-serif;
@@ -63,7 +64,7 @@
               
               
               <div class="flex gap-1">
-                  <i class="fa-solid fa-arrow-right w-7 h-7 bg-build-primary inline-flex rounded-full text-black justify-center items-center"></i>
+                  <i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-build-primary inline-flex rounded-full text-black justify-center items-center"></i>
           
           
                   <a class="font-bold text-xl">Rinterio</a></div>
@@ -82,7 +83,7 @@
             
            
             <div class="navbar-end">
-              <a class="btn bg-build-primary font-bold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right w-7 h-7 bg-black inline-flex rounded-full text-build-primary justify-center items-center"></i></a>
+              <a class="btn bg-build-primary font-bold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-black inline-flex rounded-full text-build-primary justify-center items-center"></i></a>
             </div>
           
             
@@ -96,7 +97,8 @@
             <p class="mt-10 font-medium text-xl text-gray-600 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.</p>
         </div>
         <div class="flex items-center justify-center">
-            <a class="mt-5 btn bg-b-build-primary font-bold rounded-3xl p-3">View Details</a>
+            <a class="mt-5 btn bg-b-build-primary font-bold rounded-3xl p-2">View Details<i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-build-primary inline-flex rounded-full text-black justify-center items-center"></i></a>
+            
         </div>
         
         
@@ -104,7 +106,7 @@
     <main>
         <img class="ml-32" src="assets/Vector.png" alt="">
         <button class="bg-black text-white rounded-3xl px-4 py-2 ml-32 mb-10 mt-10"><i class="fa-solid fa-arrow-right text-white"></i>About Us</button>
-        <section class="flex justify-between">
+        <section class="flex justify-between container mx-auto">
           <div class="ml-32">
             <h1 class="font-bold text-4xl">We design thoughtful, <br> liveable spaces</h1>
             <p class="font-medium text-xl text-gray-700 mt-7">The barn house captivates with its blend of rustic charm and <br>
@@ -192,45 +194,78 @@
           </section>
 
 
+         
+          
+
+            
+          </section>
           <section class="bg-cover bg-center bg-no-repeat" style="background-image: url('assets/bg.jpg');">
             <div class="flex items-center justify-center">
-              <a class="mt-5 btn bg-b-build-primary font-bold rounded-3xl p-3">Lets Connect</a>
+                <a class="mt-5 btn bg-b-build-primary font-bold rounded-3xl p-3">
+                    <i class="fa-solid fa-arrow-right text-black"></i>Let's Connect
+                </a>
             </div>
-
-            <div class="text-center mt-4">
-              <h1 class="font-bold text-4xl mb-4">Let’s Discuss Next Project</h1>
-              <p class="font-medium text-gray-700 text-xl">The barn house captivates with its blend of rustic charm and modern sophistication,<br> featuring weathered wood, sleek metal accents.</p>
+        
+            <div class="text-center mt-4 mb-4">
+                <h1 class="font-bold text-4xl mb-4">Let’s Discuss Next Project</h1>
+                <p class="font-medium text-gray-700 text-xl">
+                    The barn house captivates with its blend of rustic charm and modern sophistication,
+                    <br> featuring weathered wood, sleek metal accents.
+                </p>
             </div>
-
-            <div class="grid grid-cols-1 grid-rows-7 md:grid-cols-2 grid-rows-5 lg:grid-cols-2 grid-rows-5 gap-4">
-              <div>
-                <input placeholder="First Name*" type="text" class="bg-white rounded-full p-2">
-              </div>
-              <div>
-                <input placeholder="Last Name*" type="text" class="bg-white rounded-full p-2">
-              </div>
-              <div>
-                <input placeholder="Phone Number*" type="text" class="bg-white rounded-full p-2">
-              </div>
-              <div>
-                <input placeholder="Email Number*" type="text" class="bg-white rounded-full p-2">
-              </div>
-              <div>
-                <input placeholder="Write your message here" type="text" class="bg-white rounded-full p-2">
-              </div>
-
-
-              
-
+        
+            <div class="max-w-3xl mx-auto">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                    <div>
+                        <input placeholder="First Name*" type="text" class="bg-white rounded-full p-2 w-full">
+                    </div>
+                    <div>
+                        <input placeholder="Last Name*" type="text" class="bg-white rounded-full p-2 w-full">
+                    </div>
+                    <div>
+                        <input placeholder="Phone Number*" type="text" class="bg-white rounded-full p-2 w-full">
+                    </div>
+                    <div>
+                        <input placeholder="Email*" type="text" class="bg-white rounded-full p-2 w-full">
+                    </div>
+                    
+                    <div class="row-span-2 col-span-2">
+                        <textarea placeholder="Write your message here" class="bg-white rounded-lg p-2 w-full h-40"></textarea>
+                    </div>
+                </div>
+                
+                <div class="flex justify-center w-full mt-4">
+                    <a class="btn bg-build-primary font-bold rounded-3xl w-full text-center">
+                        Send Mail
+                        <i class="fa-solid fa-arrow-right -rotate-45 w-7 h-6 bg-black inline-flex rounded-full text-build-primary justify-center items-center"></i>
+                    </a>
+                </div>
             </div>
           </section>
+
+
+          <section class="bg-black">
+            <div>
+              <h1 class="flex justify-center mx-auto text-3xl mt-8">
+                <div class="flex gap-1">
+                  <i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-build-primary inline-flex rounded-full text-black justify-center items-center"></i>
+          
+          
+                  <a class="font-bold text-xl text-white">Rinterio</a></div>
+              </div>
+              </h1>
+            </div>
+
+          </section>
+        
           
 
           
        
 
     </main>
-    <footer>
+    <footer></footer>
+      
 
     </footer>
     
