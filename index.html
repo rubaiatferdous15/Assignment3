@@ -36,32 +36,7 @@
                  
         <div class="navbar bg-base-100">
             <div class="navbar-start">
-              <div class="dropdown">
-                <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    class="h-5 w-5"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor">
-                    <path
-                      stroke-linecap="round"
-                      stroke-linejoin="round"
-                      stroke-width="2"
-                      d="M4 6h16M4 12h8m-8 6h16" />
-                  </svg>
-                </div>
-                <ul
-                  tabindex="0"
-                  class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
-                   <li class="font-bold"><a>Home</a></li>
-                   <li class="text-gray-500"><a>Services</a></li >
-                   <li class="text-gray-500" ><a>Portfolio</a></li>
-                   <li class="text-gray-500"><a>Blogs</a></li>
-                   <li class="text-gray-500"><a>Contact Us</a></li>
-                </ul>
-              </div>
-              
+             
               
               <div class="flex gap-1">
                   <i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-build-primary inline-flex rounded-full text-black justify-center items-center"></i>
@@ -82,9 +57,37 @@
             </div>
             
            
-            <div class="navbar-end">
+            <div class="navbar-end gap-x-6 hidden lg:flex">
+              <i class="fa-solid fa-magnifying-glass w-7 h-7  bg-build-primary rounded-full inline-flex justify-center items-center"></i>
+              <i class="fa-solid fa-cart-shopping  w-7 h-7  bg-build-primary rounded-full inline-flex justify-center items-center"></i>
               <a class="btn bg-build-primary font-bold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-black inline-flex rounded-full text-build-primary justify-center items-center"></i></a>
             </div>
+            <div class="dropdown">
+              <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  class="h-5 w-5"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M4 6h16M4 12h8m-8 6h16" />
+                </svg>
+              </div>
+              <ul
+                tabindex="0"
+                class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                 <li class="font-bold"><a>Home</a></li>
+                 <li class="text-gray-500"><a>Services</a></li >
+                 <li class="text-gray-500" ><a>Portfolio</a></li>
+                 <li class="text-gray-500"><a>Blogs</a></li>
+                 <li class="text-gray-500"><a>Contact Us</a></li>
+              </ul>
+            </div>
+            
           
             
            
@@ -92,12 +95,13 @@
         </nav>
 
         <div>
-            <img class="mx-auto" src="assets/banner.png" alt="">
-            <h1 class="mt-10 font-extrabold text-6xl text-center">A barn house of this design has a <br> striking appearance</h1>
-            <p class="mt-10 font-medium text-xl text-gray-600 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.</p>
+          <img class="mx-auto w-full max-w-xs sm:max-w-sm lg:w-auto px-4" src="assets/banner.png" alt="">
+
+            <h1 class="mt-10 font-extrabold text-xl lg:text-6xl text-center">A barn house of this design has a <br> striking appearance</h1>
+            <p class="mt-10 font-medium text-xs lg:text-xl text-gray-600 text-center">The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek metal <br>accents, and large windows that flood the space with natural light.</p>
         </div>
         <div class="flex items-center justify-center">
-            <a class="mt-5 btn bg-b-build-primary font-bold rounded-3xl p-2">View Details<i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-build-primary inline-flex rounded-full text-black justify-center items-center"></i></a>
+            <a class="mt-5 btn bg-b-build-primary font-bold rounded-3xl p-2 w-3/4 lg:w-auto">View Details<i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-build-primary inline-flex rounded-full text-black justify-center items-center"></i></a>
             
         </div>
         
@@ -106,7 +110,7 @@
     <main>
         <img class="ml-32" src="assets/Vector.png" alt="">
         <button class="bg-black text-white rounded-3xl px-4 py-2 ml-32 mb-10 mt-10"><i class="fa-solid fa-arrow-right text-white"></i>About Us</button>
-        <section class="flex justify-between container mx-auto">
+        <section class=" flex flex-col lg:flex-row justify-between container mx-auto">
           <div class="ml-32">
             <h1 class="font-bold text-4xl">We design thoughtful, <br> liveable spaces</h1>
             <p class="font-medium text-xl text-gray-700 mt-7">The barn house captivates with its blend of rustic charm and <br>
@@ -198,8 +202,8 @@
           
 
             
-          </section>
-          <section class="bg-cover bg-center bg-no-repeat" style="background-image: url('assets/bg.jpg');">
+          
+          <section class="pb-10 bg-cover bg-center bg-no-repeat" style="background-image: url('assets/bg.jpg');">
             <div class="flex items-center justify-center">
                 <a class="mt-5 btn bg-b-build-primary font-bold rounded-3xl p-3">
                     <i class="fa-solid fa-arrow-right text-black"></i>Let's Connect
@@ -215,7 +219,7 @@
             </div>
         
             <div class="max-w-3xl mx-auto">
-                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4">
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
                     <div>
                         <input placeholder="First Name*" type="text" class="bg-white rounded-full p-2 w-full">
                     </div>
@@ -229,7 +233,7 @@
                         <input placeholder="Email*" type="text" class="bg-white rounded-full p-2 w-full">
                     </div>
                     
-                    <div class="row-span-2 col-span-2">
+                    <div class="lg:col-span-2">
                         <textarea placeholder="Write your message here" class="bg-white rounded-lg p-2 w-full h-40"></textarea>
                     </div>
                 </div>
@@ -237,7 +241,7 @@
                 <div class="flex justify-center w-full mt-4">
                     <a class="btn bg-build-primary font-bold rounded-3xl w-full text-center">
                         Send Mail
-                        <i class="fa-solid fa-arrow-right -rotate-45 w-7 h-6 bg-black inline-flex rounded-full text-build-primary justify-center items-center"></i>
+                        <i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-black inline-flex rounded-full text-build-primary justify-center items-center"></i>
                     </a>
                 </div>
             </div>
@@ -245,16 +249,49 @@
 
 
           <section class="bg-black">
-            <div>
-              <h1 class="flex justify-center mx-auto text-3xl mt-8">
-                <div class="flex gap-1">
+          
+            <div class="flex items-center justify-center gap-2 pt-20 mb-10">
+              
+              <div class="flex justify-center">
                   <i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-build-primary inline-flex rounded-full text-black justify-center items-center"></i>
-          
-          
-                  <a class="font-bold text-xl text-white">Rinterio</a></div>
               </div>
-              </h1>
+              
+              
+              <h1 class="font-bold text-white text-3xl">Rinterio</h1>
             </div>
+          
+            <div class="mb-10">
+              <p class="font-medium text-xl text-gray-500 text-center mt-4">The barn house captivates with its blend of rustic charm and modern sophistication, <br> featuring weathered wood, sleek metal accents.</p>
+            </div>
+            <div>
+              
+              <footer class="bg-black text-gray-500 text-xl p-10 flex flex-col lg:flex-row items-center justify-center gap-20">
+                <nav>
+                  <a class="link link-hover">Home</a>
+                 
+                </nav>
+                <nav>
+                  <a class="link link-hover">Services</a>
+                 
+                </nav>
+                <nav>
+                  <a class="link link-hover">Portfolio</a>
+                 
+                </nav>
+                <nav>
+                  <a class="link link-hover">Blogs</a>
+                  
+                </nav>
+                <nav>
+                  <a class="link link-hover">Contact Us</a>
+                </nav>
+              </footer>
+              <div class="flex items-center justify-center mt-10 pb-4">
+                <a class="btn bg-build-primary font-bold rounded-3xl">Book Consult<i class="fa-solid fa-arrow-right -rotate-45 w-7 h-7 bg-black inline-flex rounded-full text-build-primary justify-center items-center"></i></a>
+              </div>
+
+            </div>
+
 
           </section>
         
@@ -264,10 +301,7 @@
        
 
     </main>
-    <footer></footer>
-      
-
-    </footer>
+    
     
 </body>
 </html>
